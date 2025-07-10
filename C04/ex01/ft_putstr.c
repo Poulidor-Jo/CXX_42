@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:02:07 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/16 23:02:08 by jordanmoret      ###   ########.fr       */
+/*   Created: 2024/09/11 09:17:58 by jmoret            #+#    #+#             */
+/*   Updated: 2024/09/12 15:21:48 by jmoret           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_uppercase char (*str)
+#include <unistd.h>
+
+void	ft_putstr(char *str)
 {
-	while(*str)
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (*str < 'A' || *str > 'Z')
-			return (0);
-		str++;
+		write (1, &str[i], 1);
+		i++;
 	}
-	return (1);
 }

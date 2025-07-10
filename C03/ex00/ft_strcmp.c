@@ -1,24 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:01:54 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/16 23:01:55 by jordanmoret      ###   ########.fr       */
+/*   Created: 2024/09/10 08:14:20 by jmoret            #+#    #+#             */
+/*   Updated: 2024/09/11 14:10:40 by jmoret           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
+
 	i = 0;
-	while (src[i] != '\0')
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
 		i++;
 	}
-	dest[i] = '\0';
-	return(dest);
+	return (s1[i] - s2[i]);
 }
+/*
+#include<stdio.h>
+int	main(void)
+{
+	char	s1[] = "abc";
+	char	s2[] = "abc";
+
+	printf("%d\n", ft_strcmp(s1, s2));
+	
+}
+*/

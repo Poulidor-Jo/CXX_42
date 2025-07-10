@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:02:07 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/16 23:02:08 by jordanmoret      ###   ########.fr       */
+/*   Created: 2024/09/11 09:15:48 by jmoret            #+#    #+#             */
+/*   Updated: 2024/09/11 15:19:30 by jmoret           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_uppercase char (*str)
+int	ft_strlen(char *str)
 {
-	while(*str)
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (*str < 'A' || *str > 'Z')
-			return (0);
-		str++;
+		i++;
 	}
-	return (1);
+	return (i);
 }
