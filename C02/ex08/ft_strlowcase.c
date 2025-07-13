@@ -6,9 +6,11 @@
 /*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 23:02:16 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/16 23:02:17 by jordanmoret      ###   ########.fr       */
+/*   Updated: 2025/07/13 21:59:59 by jordanmoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//#include <stdio.h>
 
 char	*ft_strlowcase(char *str)
 {
@@ -23,3 +25,11 @@ char	*ft_strlowcase(char *str)
 	}
 	return (str);
 }
+
+/*int main(void) {
+    char s[] = "HELLO WORLD!";
+    printf("Avant : %s\n", s);
+    ft_strlowcase(s);
+    printf("Après : %s\n", s);
+    return 0;
+}*/

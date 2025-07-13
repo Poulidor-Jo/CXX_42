@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 08:25:09 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/25 07:34:24 by jmoret           ###   ########.fr       */
+/*   Updated: 2025/07/13 21:47:56 by jordanmoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_strcapitalize(char *str)
 			str[i] = ft_lowercase(str[i]);
 		++i;
 	}
-	return (str);76
+	return (str);
 }
 /*int	main(void)
 	char str[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";

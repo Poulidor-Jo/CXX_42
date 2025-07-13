@@ -6,7 +6,7 @@
 /*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 23:01:57 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/16 23:01:58 by jordanmoret      ###   ########.fr       */
+/*   Updated: 2025/07/13 21:58:40 by jordanmoret      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,14 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-int main(void)
+
+/*#include <stdio.h>
+int main(void) 
 {
-	char src[] = "Hello, World!";
-	char dest[20];  // Taille plus grande que nécessaire
-	pour illustrer le remplissage par des '\0'
-
-	// Appel de la fonction ft_strncpy
-	ft_strncpy(dest, src, 5);
-
-	// Affichage du résultat de la copie
-	printf("Source: %s\n", src);
-	printf("Dest après ft_strncpy: %s\n", dest);
-
-	return 0;
+    char src[] = "Hello Copilot";
+    char dest[50];
+    ft_strncpy(dest, src, 5);
+    dest[5] = '\0';
+    printf("src: %s\ndest (5): %s\n", src, dest);
+    return 0;
 }*/
