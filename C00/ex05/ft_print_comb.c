@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/13 00:23:21 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/13 00:23:22 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/09 13:09:45 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/09 13:59:13 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	ft_print_comb(void)
 			c = b + 1;
 			while (c <= '9')
 			{
-				ft_putchar(a, b, c);
+				ft_putchar (a, b, c);
 				if (!(a == '7' && b == '8' && c == '9'))
 				{
 					write(1, ", ", 2);
@@ -46,9 +46,8 @@ void	ft_print_comb(void)
 		a++;
 	}
 }
-/*int main(void)
+/*
+int main(void)
 {
 	ft_print_comb();
-	return 0 ;
 }*/
-

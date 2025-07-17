@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 23:21:12 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/15 23:21:14 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/10 10:16:21 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/10 12:03:35 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int i;
-	int ri;
-	int swap;
+	int	i;
+	int	ri;
+	int	swap;
 
 	i = 0;
 	ri = size - 1;
@@ -27,20 +27,16 @@ void	ft_rev_int_tab(int *tab, int size)
 		ri--;
 	}
 }
-/*#include <stdio.h>
+/*#include<stdio.h>
 
-void ft_rev_int_tab(int *tab, int size);
-
-int main(void)
+int	main(void)
 {
-    int tab[] = {1, 2, 3, 4, 5};  // Déclaration du tableau
-    int size = 5;  // Taille du tableau
+	int	tab[] = {1, 2, 3, 4, 5, 6};
+	int	size = 6;
+	
+	ft_rev_int_tab(tab, size);
 
-    ft_rev_int_tab(tab, size);  // Appel de la fonction pour inverser le tableau
-
-    // Affichage direct du tableau après inversion
-    for (int i = 0; i < size; i++)
-        printf("%d ", tab[i]);
-
-    return 0;
+	for (int i = 0; i < size; i++)
+		printf("%d",tab[i]);
+	return 0;
 }*/

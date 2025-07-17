@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/19 08:26:24 by jmoret            #+#    #+#             */
-/*   Updated: 2025/07/13 22:03:56 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/14 09:17:03 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/14 09:56:57 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 unsigned int	ft_strlen(char *s)
 {
@@ -37,10 +35,12 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	dest[i] = 0;
 	return (ft_strlen(src));
 }
+/*
+#include <stdio.h>
 
-/*int	main(void)
+int	main(void)
 {
-	char	src[] = "Hello Copilot!";
+	char	src[] = "Hello World!";
 	char	dest[20];
 	unsigned int	len;
 
@@ -48,4 +48,3 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	printf("src: %s\ndest: %s\nlen: %u\n", src, dest, len);
 	return (0);
 }*/
-

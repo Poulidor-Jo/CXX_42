@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:01:54 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/07/13 21:57:46 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/10 14:55:20 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/14 08:44:52 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -25,13 +23,15 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+/*
+#include<stdio.h>
 
-/*int	main(void)
+int	main()
 {
-	char	src[] = "Hello Copilot";
+	char	src[] = "Hello World";
 	char	dest[50];
 
-	ft_strcpy(dest, src);
-	printf("src: %s\ndest: %s\n", src, dest);
-	return (0);
+	ft_strcpy (dest, src);
+	printf("src : %s\ndest : %s\n", src, dest);
+	return(0);
 }*/

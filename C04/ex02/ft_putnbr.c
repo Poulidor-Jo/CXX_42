@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 09:18:57 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/12 16:59:16 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/15 16:50:03 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/16 08:50:17 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,12 @@ void	ft_putnbr(int nb)
 	}
 }
 /*
-int	main(void)
+int	main()
 {
 	write(1, "Test 1 : ", 9);
 	ft_putnbr(-50);
 	write(1, "\n", 1);
 	write(1, "Test 2 : ", 9);
 	ft_putnbr(2147483647);
-	return (0);
-}
-*/
+	return(0);
+}*/

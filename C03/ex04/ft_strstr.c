@@ -1,28 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 16:00:00 by jormoret          #+#    #+#             */
-/*   Updated: 2025/07/17 16:11:49 by jormoret         ###   ########.fr       */
+/*   Created: 2025/07/15 09:37:54 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/15 13:59:59 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int	main(int argc, char **argv)
+char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
+	int	j;
 
 	i = 0;
-	argc = 0;
-	while (argv[0][i])
+	j = 0;
+	if (to_find[0] == '\0')
+		return (str);
+	while (str[i])
 	{
-		write (1, &argv[0][i], 1);
+		while (str[i + j] == to_find[j] && to_find[j] != '\0')
+		{
+			j++;
+		}
+		if (to_find[j] == '\0')
+		{
+			return (&str[i]);
+		}
 		i++;
+		j = 0;
 	}
-	write (1, "\n", 1);
 	return (0);
 }
+/*#include <stdio.h>
+int	main()
+{
+	char	str[] = "Hell";
+	char	to_find[] = "world";
+
+	ft_strstr(str, to_find);
+
+	printf("Occurence trouver : %s", ft_strstr(str, to_find));
+	return(0);
+}*/

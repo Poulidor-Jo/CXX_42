@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 09:15:48 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/11 15:19:30 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/15 16:45:04 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/15 16:45:16 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,12 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
+/*#include <stdio.h>
+int	main(void)
+{
+	char	*str = "Longueur";
+	int	lenght;
+
+	lenght = ft_strlen(str);
+	printf("Longueur = %d caractere", lenght);
+}*/

@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 15:39:56 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/12 09:35:38 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/15 18:01:21 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/16 09:13:44 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_atoi(char *str)
 {
@@ -18,8 +16,8 @@ int	ft_atoi(char *str)
 	int	res;
 	int	sign;
 
-	res = 0;
 	i = 0;
+	res = 0;
 	sign = 1;
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
@@ -36,10 +34,10 @@ int	ft_atoi(char *str)
 	}
 	return (res * sign);
 }
-/*
-int	main(void)
+/*#include <stdio.h>
+int	main()
 {
-	char	str[] = " ---+--+1234ab567";
-	printf("%d", ft_atoi(str));
-	return (0);
+	char	str[] = "-+--1254as65";
+	printf("Resultat : %d", ft_atoi(str));
+	return(0);
 }*/

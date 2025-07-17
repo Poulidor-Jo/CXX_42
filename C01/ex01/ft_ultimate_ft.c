@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 23:20:53 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/15 23:20:54 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/09 15:01:13 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/10 11:38:53 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,3 @@ void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
-

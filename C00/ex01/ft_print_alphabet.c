@@ -3,24 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/12 23:52:32 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/13 00:07:30 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/09 11:09:29 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/09 14:27:15 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
-    char	c;
+	char	c;
 
-    c = 'a';
-    while (c <= 'z')
+	c = 'a';
+	while (c <= 'z')
 	{
 		write(1, &c, 1);
 		c++;
 	}
 }
-
+/*int	main(void)
+{
+	ft_print_alphabet();
+}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 09:17:58 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/12 15:21:48 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/15 16:47:15 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/15 16:47:45 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,13 @@ void	ft_putstr(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write (1, &str[i], 1);
+		write(1, &str[i], 1);
 		i++;
 	}
 }
+/*int	main(void)
+{
+	char	*str = "Print ma phrase";
+
+	ft_putstr(str);
+}*/

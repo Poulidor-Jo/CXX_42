@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/15 23:21:06 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/15 23:21:07 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/09 18:17:35 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/10 12:12:54 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
+/*int	main(void)
+{
+	char	*str = "Print ma phrase";
+
+	ft_putstr(str);
+}*/

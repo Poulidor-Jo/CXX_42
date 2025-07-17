@@ -3,26 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:02:00 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/07/13 21:58:33 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/11 09:38:43 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/15 17:35:21 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_str_is_alpha(char *str)
+int	ft_str_is_alpha(char *str)
 {
 	while (*str)
 	{
-		if (!((*str >= 'A' && *str <='Z') || (*str >= 'a' && *str <= 'z')))
+		if (!((*str >= 'A' && *str <= 'Z') || (*str >= 'a' && *str <= 'z')))
 			return (0);
-			str++;
+		str++;
 	}
 	return (1);
 }
-
-/*#include <stdio.h>
-int main(void) 
+/*
+#include <stdio.h>
+int main(void)
 {
     char s1[] = "Hello";
     char s2[] = "Hello42";

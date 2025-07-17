@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 11:51:24 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/18 12:54:53 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/17 09:20:11 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/17 10:11:20 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,9 @@ int	ft_iterative_power(int nb, int power)
 
 	result = nb;
 	if (power < 0)
-	{
 		return (0);
-	}
 	if (power == 0)
-	{
 		return (1);
-	}
 	while (power > 1)
 	{
 		result = result * nb;
@@ -30,8 +26,9 @@ int	ft_iterative_power(int nb, int power)
 	}
 	return (result);
 }
-/* #include<stdio.h>
-int	main(void)
+/*#include <stdio.h>
+
+int	main()
 {
-	printf("Le resultat de 2 puissance 3 est %d",ft_iterative_power(0,0));
-} */
+	printf("Le resultat de 2 puissance 3 est : %d", ft_iterative_power(2, 3));
+}*/

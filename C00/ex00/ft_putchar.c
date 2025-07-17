@@ -3,16 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/12 23:46:57 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/12 23:54:03 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/09 11:03:16 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/09 14:45:15 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putchar(char c)
+void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }
+/*int	main(void)
+{
+	ft_putchar('a');
+}*/

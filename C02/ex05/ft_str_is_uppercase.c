@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:02:07 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/07/13 22:01:22 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/13 09:02:11 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/14 09:09:48 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 int	ft_str_is_uppercase(char *str)
 {
@@ -22,8 +20,10 @@ int	ft_str_is_uppercase(char *str)
 	}
 	return (1);
 }
-
-/*int main(void) {
+/*
+#include <stdio.h>
+int main(void) 
+{
     char s1[] = "ABCDEF";
     char s2[] = "ABCdef";
     printf("%s: %d\n", s1, ft_str_is_uppercase(s1));

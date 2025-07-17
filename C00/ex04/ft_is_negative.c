@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/13 00:23:19 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/13 00:23:20 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/09 11:39:13 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/09 14:42:27 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	ft_is_negative(int n)
 	else
 		write(1, "P", 1);
 }
-
-/* int	main(void)
-{
-	ft_is_negative(-42);
-}*/
+/*int	main(void)
+ {
+ 	ft_is_negative(-9);
+ }*/

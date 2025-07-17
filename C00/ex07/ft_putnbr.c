@@ -1,45 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 17:00:39 by jormoret          #+#    #+#             */
-/*   Updated: 2025/07/15 11:47:24 by jormoret         ###   ########.fr       */
+/*   Created: 2025/07/16 14:27:06 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/16 14:33:09 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dest, char *src, unsigned int nb)
-{
-	unsigned int	i;
-	unsigned int	k;
+#include <unistd.h>
 
-	i = 0;
-	while (dest[i] != '\0')
-		i++;
-	k = 0;
-	while (src[k] != '\0' && k < nb)
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putnbr(int nb)
+{
+	if (nb == -2147483648)
 	{
-		dest[i + k] = src[k];
-		k++;
+		write(1, "-2147483648", 11);
+		return ;
 	}
-	dest[i + k] = '\0';
-	return (dest);
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nb = nb * -1;
+	}
+	if (nb >= 0 && nb < 10)
+		ft_putchar(nb + '0');
+	else
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
 }
 /*
-#include <stdio.h>
 int	main()
 {
-	char	dest[20] = "Hello, ";
-	char	src[] = "world!";
-
-	unsigned int	nb = 5;
-
-	printf("Avant ft_strncat : %s", dest);
-	
-	ft_strncat(dest, src, nb);
-
-	printf("Apres ft_strncat : %s", dest);
+	write(1, "Test 1 : ", 9);
+	ft_putnbr(-50);
+	write(1, "\n", 1);
+	write(1, "Test 2 : ", 9);
+	ft_putnbr(2147483647);
 	return(0);
 }*/

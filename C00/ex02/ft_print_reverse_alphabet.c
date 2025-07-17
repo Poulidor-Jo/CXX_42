@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/13 00:20:24 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/06/13 00:20:25 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/09 11:17:22 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/09 14:38:31 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ void	ft_print_reverse_alphabet(void)
 		c--;
 	}
 }
-
-/* int main(void)
+/*int	main(void)
 {
- 	ft_print_reverse_alphabet();
+	ft_print_reverse_alphabet();
 }*/

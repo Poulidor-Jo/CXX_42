@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:02:05 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/07/13 21:59:28 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/13 08:43:11 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/14 09:08:41 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
-int		ft_str_is_lowercase(char *str)
+int	ft_str_is_lowercase(char *str)
 {
 	while (*str)
 	{
@@ -22,8 +20,10 @@ int		ft_str_is_lowercase(char *str)
 	}
 	return (1);
 }
-
-/*int main(void) {
+/*
+#include <stdio.h>
+int main(void)
+{
     char s1[] = "abcdef";
     char s2[] = "abcDEF";
     printf("%s: %d\n", s1, ft_str_is_lowercase(s1));

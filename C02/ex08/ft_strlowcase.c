@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jordanmoret <jordanmoret@student.42.fr>    +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 23:02:16 by jordanmoret       #+#    #+#             */
-/*   Updated: 2025/07/13 21:59:59 by jordanmoret      ###   ########.fr       */
+/*   Created: 2025/07/13 10:35:21 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/14 09:13:26 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 char	*ft_strlowcase(char *str)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -25,8 +23,10 @@ char	*ft_strlowcase(char *str)
 	}
 	return (str);
 }
-
-/*int main(void) {
+/*
+#include <stdio.h>
+int main(void) 
+{
     char s[] = "HELLO WORLD!";
     printf("Avant : %s\n", s);
     ft_strlowcase(s);

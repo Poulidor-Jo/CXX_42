@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 10:25:46 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/18 12:54:41 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/17 13:33:55 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/17 14:05:25 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,10 @@ int	ft_sqrt(int nb)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 
-int	main(void)
+int	main()
 {
-	printf("%i\n", ft_sqrt(25));
-	return(0);
+	printf("Racine carre de 25 est : %d", ft_sqrt(25));
+	return (0);
 }*/

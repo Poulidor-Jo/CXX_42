@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/10 14:13:50 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/11 12:17:40 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/14 11:22:42 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/15 11:43:14 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,14 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	return (0);
 }
 /*
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
+int	main()
 {
-	char str1[] = "hello";
-	char str2[] = "helloo";
+	char	str1[] = "Hello";
+	char	str2[] = "Hiello";
 
-	int result = ft_strncmp(str1, str2, 4);
-	printf("Resultat de la comparaison; %d\n", result);
-	
+	int	result = ft_strncmp(str1, str2, 4);
+	printf ("Resultat de la comparaison est : %d\n",result);
 	return(0);
-}
-*/
+}*/
