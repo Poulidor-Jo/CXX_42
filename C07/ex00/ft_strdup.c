@@ -3,29 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <jormoret@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/19 07:06:05 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/26 10:19:18 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/22 08:46:33 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/23 13:33:02 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <stdlib.h>
 
 char	*ft_strdup(char *src)
 {
 	int		i;
-	int		len;
+	int		lenght;
 	char	*dest;
 
-	len = 0;
-	while (src[len] != '\0')
-		len++;
-	dest = (char *)malloc(len + 1);
+	i = 0;
+	lenght = 0;
+	while (src[lenght])
+		lenght++;
+	dest = malloc(sizeof(char) * (lenght + 1));
 	if (dest == NULL)
 		return (NULL);
-	i = 0;
-	while (src[i] != '\0')
+	while (i < lenght)
 	{
 		dest[i] = src[i];
 		i++;
@@ -33,12 +34,9 @@ char	*ft_strdup(char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
+/*int	main(void)
 {
-	printf("%s\n", ft_strdup("hey123!"));
-	return (0);
-}
-*/
+	char	*src = "Hello world";
+
+	printf("Copie de ma string allouer avec malloc : %s", ft_strdup(src));
+}*/

@@ -3,35 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 16:08:30 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/16 10:16:46 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/21 09:18:58 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/21 09:50:59 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write (1, &c, 1);
-}
-
 int	main(int argc, char *argv[])
 {
+	int	i;
 	int	j;
 
-	argc = 1;
-	while (argv[argc])
+	i = 1;
+	j = 0;
+	while (i < argc)
 	{
-		j = 0;
-		while (argv[argc][j] != '\0')
+		while (argv[i][j])
 		{
-			ft_putchar(argv[argc][j]);
+			write (1, &argv[i][j], 1);
 			j++;
 		}
 		write (1, "\n", 1);
-		argc++;
+		i++;
+		j = 0;
 	}
 	return (0);
 }

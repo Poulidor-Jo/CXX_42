@@ -3,54 +3,53 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/19 07:06:58 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/26 09:21:59 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/22 14:32:04 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/23 13:24:08 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h>
 
 int	*ft_range(int min, int max)
 {
-	int	*dest;
+	int	*tab;
 	int	i;
 
+	tab = 0;
 	if (min >= max)
 		return (0);
-	dest = (int *)malloc((max - min) * sizeof(int));
-	if (dest == NULL)
-		return (NULL);
+	tab = malloc(sizeof(int) * (max - min));
+	if (tab == 0)
+		return (0);
 	i = 0;
-	while (min < max)
+	while (i < (max - min))
 	{
-		dest[i] = min;
+		tab[i] = min + i;
 		i++;
-		min++;
 	}
-	return (dest);
+	return (tab);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	int	*dest;
 	int	i;
 	int	min;
 	int	max;
+	int	*tab;
 
+	tab = 0;
+	min = 4;
+	max = 9;
+	tab = ft_range(min, max);
 	i = 0;
-	min = 5;
-	max = 15;
-	dest = ft_range(min,max);
-	while (min < max)
+	while (i < (max - min))
 	{
-		printf("%d  ", dest[i]);
+		printf("%d\n", tab[i]);
 		i++;
-		min++;
 	}
+	free(tab);
+	tab = 0;
 	return (0);
 }*/

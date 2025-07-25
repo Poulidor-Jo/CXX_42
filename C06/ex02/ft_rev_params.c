@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_params.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jmoret <jmoret@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jormoret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 13:13:56 by jmoret            #+#    #+#             */
-/*   Updated: 2024/09/16 11:02:23 by jmoret           ###   ########.fr       */
+/*   Created: 2025/07/21 09:51:55 by jormoret          #+#    #+#             */
+/*   Updated: 2025/07/21 13:21:22 by jormoret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	main(int argc, char **argv)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	j = argc - 1;
 	while (j > 0)
@@ -26,7 +26,7 @@ int	main(int argc, char **argv)
 			write(1, &argv[j][i], 1);
 			i++;
 		}
-		write(1, "\n", 1);
+		write (1, "\n", 1);
 		j--;
 	}
 	return (0);

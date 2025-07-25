@@ -45,3 +45,10 @@ int	main()
 	printf("Occurence trouver : %s", ft_strstr(str, to_find));
 	return(0);
 }*/
+main(void)
+{
+	char	*str = "Longueur";
+	int	lenght;
+
+	lenght = ft_strlen(str);
+	printf("Longueur = %d caractere", lenght);
