@@ -25,7 +25,7 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 }
-/*
+
 int	main()
 {
 	write(1, "Test 1 : ", 9);
@@ -34,4 +34,4 @@ int	main()
 	write(1, "Test 2 : ", 9);
 	ft_putnbr(2147483647);
 	return(0);
-}*/
+}

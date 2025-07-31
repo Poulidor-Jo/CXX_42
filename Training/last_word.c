@@ -13,19 +13,15 @@ int	main(int ac, char **av)
 
     if (ac == 2)
     {
-        // Trouver la fin de la chaîne
         while (av[1][i])
             i++;
         i--;
-        // Sauter les espaces/tabs à la fin
         while (i >= 0 && (av[1][i] == ' ' || av[1][i] == '\t'))
             i--;
         end = i;
-        // Trouver le début du dernier mot
         while (i >= 0 && av[1][i] != ' ' && av[1][i] != '\t')
             i--;
         start = i + 1;
-        // Afficher le dernier mot
         while (start <= end)
             ft_putchar(av[1][start++]);
     }

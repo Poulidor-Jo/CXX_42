@@ -6,7 +6,7 @@ int		main(int argc, char *argv[])
 	char	letter;
 
 	i = 0;
-	if (argc == 2)
+	if (argc == 3)
 	{
 		while(argv[1][i])
 		{

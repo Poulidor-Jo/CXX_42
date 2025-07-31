@@ -1,8 +1,8 @@
 #include <unistd.h>
 
-void solve(char *str1, char *str2) {
+void inter(char *str1, char *str2) 
+{
     int i;
-    int j;
     int ascii[256] = {0};
 
     i = 0;
@@ -14,7 +14,6 @@ void solve(char *str1, char *str2) {
     }
 
     i = 0;
-    j = 0;
     while (str1[i])
     {
         if (ascii[str1[i]] == 1)
@@ -29,7 +28,7 @@ void solve(char *str1, char *str2) {
 
 int	main(int argc, char **argv) {
 	if (argc == 3)
-		solve(argv[1], argv[2]);
+		inter(argv[1], argv[2]);
 	write(1, "\n", 1);
 	return 0;
 }
